@@ -757,6 +757,7 @@ ul {
 
 .email-link.footer-email,
 .telephone-link.footer-telephone {
+    display: inline;
     color: var(--footer-text-color);
 }
 
