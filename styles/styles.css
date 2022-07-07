@@ -703,9 +703,9 @@ ul {
 /*Обгортка для футера*/
 .footer-box {
     display: flex;
-    /*height: 252px;*/
-    /*padding: 60px 15px;*/
+    height: 252px;
     padding: 53px 15px;
+    /*padding: 60px 15px;*/
     align-items: baseline;
 }
 
