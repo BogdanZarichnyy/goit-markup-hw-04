@@ -89,7 +89,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-/* Фон сторінки */
+/*Фон сторінки*/
 .body-general {
     background-color: var(--content-color);
     color: var(--primary-text-color);
@@ -109,13 +109,7 @@ body {
     border-bottom: 1px solid var(--border-header-color);
 }
 
-/*Обгортка для хедеру*/
-.header-box {
-    display: flex;
-    align-items: center;
-}
-
-/*Блок навігації*/
+/*Обгортка для хедеру та блок навігації*/
 .header-navigation {
     display: flex;
     align-items: center;
@@ -232,6 +226,7 @@ body {
             var(--box-shadow-8)),
         url("../images/photo.jpg");
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .order-title {
@@ -264,7 +259,7 @@ body {
 
 .button:focus,
 .button:hover {
-    background: var(--focus-color);
+    background-image: var(--focus-color);
     box-shadow:
         0 4px 4px var(--main-shadow-button);
 }
@@ -353,7 +348,7 @@ body {
     padding-bottom: 94px;
 }
 
-/* аголовок для секції*/
+/*Заголовок для секції*/
 .work-title {
     margin-bottom: 50px;
     font-size: 36px;
@@ -376,14 +371,6 @@ body {
 /*Наша команда*/
 .section-team {
     background-color: var(--secondary-section-fon);
-}
-
-.team-title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
 }
 
 /*Кадровий апарат*/
@@ -438,12 +425,12 @@ body {
     color: var(--icon-social);
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .social-link:hover,
 .social-link:focus {
     background-color: var(--focus-color);
-    cursor: pointer;
     color: var(--content-color);
 }
 
@@ -530,7 +517,7 @@ body {
 }
 
 .cheсked {
-    background: var(--focus-color);
+    background-image: var(--focus-color);
     color: var(--content-color);
 }
 
@@ -560,6 +547,7 @@ body {
     margin: 15px;
     background-color: var(--content-color);
     border-bottom: 1px solid var(--border-content-color);
+    cursor: pointer;
 }
 
 .poster-item:hover {
@@ -567,7 +555,6 @@ body {
         0 1px 1px var(--box-shadow-1),
         0 4px 4px var(--box-shadow-6),
         1px 4px 6px var(--box-shadow-7);
-    cursor: pointer;
 }
 
 .poster-text {
