@@ -20,242 +20,231 @@
 
     <body class="body-general">
 
-        <!--Container - width 1600px-->
-        <div class="container">
+        <!--Хедер-->
+        <header class="header-content">
+            <!--Контейнер контенту - ширина 1200px-->
+            <div class="container-content">
+                <!--Обгортка для хедеру-->
+                <div class="header-box">
 
-            <!--Хедер-->
-            <header class="header-content">
-                <!--Container - width 1200px-->
-                <div class="container-content">
-                    <!--Обгортка для хедеру-->
-                    <div class="header-box">
-
-                        <!--Блок навігації-->
-
+                    <!--Блок навігації-->
+                    <nav class="header-navigation">
+                    
                         <!--Логотип-->
-                        <a class="header-logo" href="./"><span class="header-logo-prefix">Web</span>Studio</a>
-
+                        <a class="header-logo" href="./"><span class="logo-prefix">Web</span>Studio</a>
+                    
                         <!--Навігація-->
-                        <nav class="header-navigation">
-                            <ul class="navigation-list">
-                                <li class="navigation-item">
-                                    <a class="navigation-link" href="./">Студія</a>
+                        <ul class="navigation-list">
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="./">Студія</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link current" href="./portfolio.html">Портфоліо</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="#">Контакти</a>
+                            </li>
+                        </ul>
+                    
+                    </nav>
+                    
+                    <!--Контакти-->
+                    <ul class="header-contacts">
+                        <li class="contact-item">
+                            <a class="email-link" href="mailto:info@devstudio.com">
+                                <svg class="contact-image" width="16px" height="12px">
+                                    <use href="./images/icons.svg#envelope"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="contact-item">
+                            <a class="telephone-link" href="tel:380961111111">
+                                <svg class="contact-image" width="10px" height="16px">
+                                    <use href="./images/icons.svg#smartphone"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+
+        <!--Контент-->
+        <main class="main-content">
+
+            <!--Секція постерів-->
+            <section class="section">
+                <!--Контейнер контенту - ширина 1200px-->
+                <div class="container-content">
+
+                    <!--Заголовок для секції-->
+                    <h1 class="hidden-title">Цей заголовок схований</h1>
+
+                    <!--Фільтр-->
+                    <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="button filter-button cheked" type="button">Все</button>
+                        </li>
+                        <li class="filter-item">
+                            <button class="button filter-button" type="button">Веб-сайти</button>
+                        </li>
+                        <li class="filter-item">
+                            <button class="button filter-button" type="button">Програми</button>
+                        </li>
+                        <li class="filter-item">
+                            <button class="button filter-button" type="button">Дизайн</button>
+                        </li>
+                        <li class="filter-item">
+                            <button class="button filter-button" type="button">Маркетинг</button>
+                        </li>
+                    </ul>
+
+                    <!--Постери-->
+                    <ul class="box-list">
+                        <li class="poster-item">
+                            <img class="box-image" src="./images/imageprofile1.jpg" width="370" alt="Технокряк" title="Технокряк">
+                            <div class="poster-text">
+                                <h3 class="poster-name">Технокряк</h3>
+                                <p class="poster-category">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="poster-item">
+                            <img class="box-image" src="./images/imageprofile2.jpg" width="370" alt="Постер New Orlean vs Golden Star" title="Постер New Orlean vs Golden Star">
+                            <div class="poster-text">
+                                <h3 class="poster-name">Постер New Orlean vs Golden Star</h3>
+                                <p class="poster-category">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="poster-item">
+                            <img class="box-image" src="./images/imageprofile3.jpg" width="370" alt="Ресторан Seafood" title="Ресторан Seafood">
+                            <div class="poster-text">
+                                <h3 class="poster-name">Ресторан Seafood</h3>
+                                <p class="poster-category">Програма</p>
+                            </div>
+                        </li>
+                        <li class="poster-item">
+                            <img class="box-image" src="./images/imageprofile4.jpg" width="370" alt="Проект Prime" title="Проект Prime">
+                            <div class="poster-text">
+                                <h3 class="poster-name">Проект Prime</h3>
+                                <p class="poster-category">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="poster-item">
+                            <img class="box-image" src="./images/imageprofile5.jpg" width="370" alt="Проект Boxes" title="Проект Boxes">
+                            <div class="poster-text">
+                                <h3 class="poster-name">Проект Boxes</h3>
+                                <p class="poster-category">Програма</p>
+                            </div>
+                        </li>
+                        <li class="poster-item">
+                            <img class="box-image" src="./images/imageprofile6.jpg" width="370" alt="Inspiration has no Borders" title="Inspiration has no Borders">
+                            <div class="poster-text">
+                                <h3 class="poster-name">Inspiration has no Borders</h3>
+                                <p class="poster-category">Веб-сайт</p>
+                            </div>
+                        </li>
+                        <li class="poster-item">
+                            <img class="box-image" src="./images/imageprofile7.jpg" width="370" alt="Видавництво Limited Edition" title="Видавництво Limited Edition">
+                            <div class="poster-text">
+                                <h3 class="poster-name">Видавництво Limited Edition</h3>
+                                <p class="poster-category">Дизайн</p>
+                            </div>
+                        </li>
+                        <li class="poster-item">
+                            <img class="box-image" src="./images/imageprofile8.jpg" width="370" alt="Проект LAB" title="Проект LAB">
+                            <div class="poster-text">
+                                <h3 class="poster-name">Проект LAB</h3>
+                                <p class="poster-category">Маркетинг</p>
+                            </div>
+                        </li>
+                        <li class="poster-item">
+                            <img class="box-image" src="./images/imageprofile9.jpg" width="370" alt="Growing Business" title="Growing Business">
+                            <div class="poster-text">
+                                <h3 class="poster-name">Growing Business</h3>
+                                <p class="poster-category">Програма</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!--Футер-->
+        <footer class="footer-content">
+            <!--Контейнер контенту - ширина 1200px-->
+            <div class="container-content">
+                <!--Обгортка для футера-->
+                <div class="footer-box">
+
+                    <!--Блок для логотипу та адреси футера-->
+                    <div class="footer-contact">
+
+                        <!--Логотип футера-->
+                        <a class="header-logo footer-logo" href="./"><span class="logo-prefix">Web</span>Studio</a>
+
+                        <!--Адреса футера-->
+                        <address class="footer-address">
+                            <ul class="address-list">
+                                <li class="address-item">
+                                    <a class="address-link" href="https://bit.ly/3pXMvUd" target="_blank" 
+                                        rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
                                 </li>
-                                <li class="navigation-item">
-                                    <a class="navigation-link current" href="./portfolio.html">Портфоліо</a>
+                                <li class="address-item">
+                                    <a class="email-link footer-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
                                 </li>
-                                <li class="navigation-item">
-                                    <a class="navigation-link" href="#">Контакти</a>
+                                <li class="address-item">
+                                    <a class="telephone-link footer-telephone" href="tel:380961111111">+38 096 111 11 11</a>
                                 </li>
                             </ul>
+                        </address>
 
-                        </nav>
+                    </div>
 
-                        <!--Контакти-->
-                        <ul class="header-contacts">
-                            <li class="contacts-item">
-                                <a class="email-link" href="mailto:info@devstudio.com">
-                                    <svg class="contact-box" width="16px" height="12px">
-                                        <use href="./images/icons.svg#envelope"></use>
+                    <!--Приєднуйтесь-->
+                    <div class="join-box">
+
+                        <h3 class="join-title">Приєднуйтесь</h3>
+
+                        <!--Приєднуйтесь - Соціальці мережі-->
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a class="social-link join" href="#">
+                                    <svg class="social-box" width="20px" height="20px">
+                                        <use href="./images/icons.svg#instagram"></use>
                                     </svg>
-                                    info@devstudio.com</a>
+                                </a>
                             </li>
-                            <li class="contacts-item">
-                                <a class="telephone-link" href="tel:380961111111">
-                                    <svg class="contact-box" width="10px" height="16px">
-                                        <use href="./images/icons.svg#smartphone"></use>
+                            <li class="social-item">
+                                <a class="social-link join" href="#">
+                                    <svg class="social-box" width="20px" height="20px">
+                                        <use href="./images/icons.svg#twitter"></use>
                                     </svg>
-                                    +38 096 111 11 11</a>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link join" href="#">
+                                    <svg class="social-box" width="20px" height="20px">
+                                        <use href="./images/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a class="social-link join" href="#">
+                                    <svg class="social-box" width="20px" height="20px">
+                                        <use href="./images/icons.svg#linkedin"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
 
                     </div>
+
                 </div>
-            </header>
-
-            <!--Контент-->
-            <main class="main-content">
-
-                <!--Секція постерів-->
-                <section class="section">
-                    <!--Container - width 1200px-->
-                    <div class="container-content">
-                        <!--Обгортка для фільтру-->
-                        <div class="poster-box">
-
-                            <!--Заголовок для секції-->
-                            <h1 class="section-title">Цей заголовок буде ховатися</h1>
-
-                            <!--Фільтр-->
-                            <ul class="filter-list">
-                                <li class="filter-item">
-                                    <button class="filter-button cheked" type="button">Все</button>
-                                </li>
-                                <li class="filter-item">
-                                    <button class="filter-button" type="button">Веб-сайти</button>
-                                </li>
-                                <li class="filter-item">
-                                    <button class="filter-button" type="button">Програми</button>
-                                </li>
-                                <li class="filter-item">
-                                    <button class="filter-button" type="button">Дизайн</button>
-                                </li>
-                                <li class="filter-item">
-                                    <button class="filter-button" type="button">Маркетинг</button>
-                                </li>
-                            </ul>
-
-                            <!--Постери-->
-                            <ul class="box-list">
-                                <li class="poster-item">
-                                    <img class="box-image" src="./images/imageprofile1.jpg" width="370" alt="Технокряк" title="Технокряк">
-                                    <div class="poster-text">
-                                        <h3 class="poster-name">Технокряк</h3>
-                                        <p class="poster-category">Веб-сайт</p>
-                                    </div>
-                                </li>
-                                <li class="poster-item">
-                                    <img class="box-image" src="./images/imageprofile2.jpg" width="370" alt="Постер New Orlean vs Golden Star" title="Постер New Orlean vs Golden Star">
-                                    <div class="poster-text">
-                                        <h3 class="poster-name">Постер New Orlean vs Golden Star</h3>
-                                        <p class="poster-category">Дизайн</p>
-                                    </div>
-                                </li>
-                                <li class="poster-item">
-                                    <img class="box-image" src="./images/imageprofile3.jpg" width="370" alt="Ресторан Seafood" title="Ресторан Seafood">
-                                    <div class="poster-text">
-                                        <h3 class="poster-name">Ресторан Seafood</h3>
-                                        <p class="poster-category">Програма</p>
-                                    </div>
-                                </li>
-                                <li class="poster-item">
-                                    <img class="box-image" src="./images/imageprofile4.jpg" width="370" alt="Проект Prime" title="Проект Prime">
-                                    <div class="poster-text">
-                                        <h3 class="poster-name">Проект Prime</h3>
-                                        <p class="poster-category">Маркетинг</p>
-                                    </div>
-                                </li>
-                                <li class="poster-item">
-                                    <img class="box-image" src="./images/imageprofile5.jpg" width="370" alt="Проект Boxes" title="Проект Boxes">
-                                    <div class="poster-text">
-                                        <h3 class="poster-name">Проект Boxes</h3>
-                                        <p class="poster-category">Програма</p>
-                                    </div>
-                                </li>
-                                <li class="poster-item">
-                                    <img class="box-image" src="./images/imageprofile6.jpg" width="370" alt="Inspiration has no Borders" title="Inspiration has no Borders">
-                                    <div class="poster-text">
-                                        <h3 class="poster-name">Inspiration has no Borders</h3>
-                                        <p class="poster-category">Веб-сайт</p>
-                                    </div>
-                                </li>
-                                <li class="poster-item">
-                                    <img class="box-image" src="./images/imageprofile7.jpg" width="370" alt="Видавництво Limited Edition" title="Видавництво Limited Edition">
-                                    <div class="poster-text">
-                                        <h3 class="poster-name">Видавництво Limited Edition</h3>
-                                        <p class="poster-category">Дизайн</p>
-                                    </div>
-                                </li>
-                                <li class="poster-item">
-                                    <img class="box-image" src="./images/imageprofile8.jpg" width="370" alt="Проект LAB" title="Проект LAB">
-                                    <div class="poster-text">
-                                        <h3 class="poster-name">Проект LAB</h3>
-                                        <p class="poster-category">Маркетинг</p>
-                                    </div>
-                                </li>
-                                <li class="poster-item">
-                                    <img class="box-image" src="./images/imageprofile9.jpg" width="370" alt="Growing Business" title="Growing Business">
-                                    <div class="poster-text">
-                                        <h3 class="poster-name">Growing Business</h3>
-                                        <p class="poster-category">Програма</p>
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </section>
-
-            </main>
-
-            <!--Футер-->
-            <footer class="footer-content">
-                <!--Container - width 1200px-->
-                <div class="container-content">
-                    <!--Обгортка для футера-->
-                    <div class="footer-box">
-
-                        <!--Блок для логотипу та адреси футера-->
-                        <div class="footer-contact">
-
-                            <!--Логотип футера-->
-                            <a class="header-logo footer-logo" href="./">
-                                <span class="header-logo-prefix">Web</span>Studio</a>
-
-                            <!--Адреса футера-->
-                            <address class="footer-address">
-                                <ul class="footer-contact-list">
-                                    <li class="footer-contact-item">
-                                        <a class="footer-address-link" href="https://bit.ly/3pXMvUd" target="_blank"
-                                           rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
-                                    </li>
-                                    <li class="footer-contact-item">
-                                        <a class="email-link footer-email"
-                                           href="mailto:info@devstudio.com">info@devstudio.com</a>
-                                    </li>
-                                    <li class="footer-contact-item">
-                                        <a class="telephone-link footer-telephone" href="tel:380961111111">+38 096 111 11
-                                            11</a>
-                                    </li>
-                                </ul>
-                            </address>
-
-                        </div>
-
-                        <!--Приєднуйтесь-->
-                        <div class="join-box">
-
-                            <h3 class="join-title">Приєднуйтесь</h3>
-
-                            <!--Приєднуйтесь - Соціальці мережі-->
-                            <ul class="social-list">
-                                <li class="social-item">
-                                    <a class="social-link join" href="#">
-                                        <svg class="social-box" width="20px" height="20px">
-                                            <use href="./images/icons.svg#instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-item">
-                                    <a class="social-link join" href="#">
-                                        <svg class="social-box" width="20px" height="20px">
-                                            <use href="./images/icons.svg#twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-item">
-                                    <a class="social-link join" href="#">
-                                        <svg class="social-box" width="20px" height="20px">
-                                            <use href="./images/icons.svg#facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-item">
-                                    <a class="social-link join" href="#">
-                                        <svg class="social-box" width="20px" height="20px">
-                                            <use href="./images/icons.svg#linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-                </div>
-            </footer>
-
-        </div>
+            </div>
+        </footer>
 
     </body>
 
