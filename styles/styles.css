@@ -529,7 +529,7 @@ body {
     box-shadow: none;
 }
 
-.cheked {
+.cheсked {
     background: var(--focus-color);
     color: var(--content-color);
 }
