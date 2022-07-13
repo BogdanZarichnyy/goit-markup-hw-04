@@ -648,13 +648,13 @@ body {
 /*Приєднуйтесь*/
 .join-box {
     margin-left: 70px;
-    color: var(--content-color);
-    text-transform: uppercase;
 }
 
 .join-title {
     font-size: 14px;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--content-color);
     margin-bottom: 20px;
 }
 
